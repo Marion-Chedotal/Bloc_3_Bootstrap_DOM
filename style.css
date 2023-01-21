@@ -1,0 +1,85 @@
+/* font Antipasto  */
+@font-face {
+    font-family: 'antipasto_pro_regular';
+    src: url('fonts/antipasto-pro-regular-trial-webfont.woff2') format('woff2'),
+         url('fonts/antipasto-pro-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* mini-reset*/
+a,a:hover {
+    text-decoration:none;   
+    color: black
+}
+#bandeau h1 a, #bandeau h1 a:hover{
+    text-decoration:none;   
+    color: black 
+}
+ul{
+    list-style-type: none;
+}
+/* général */
+
+h1 a, #bandeau h2, #slider h2, .sectionTitle h5, .infosInteriors h5 {
+    font-family:'antipasto_pro_regular';
+}
+p, a, li, .card-body h5 {
+    font-family:'Segoe UI';
+}
+
+/* ==== HEADER === */
+#bandeau .sideTitle {
+    font-size:1.3rem;
+}
+#bandeau {
+    border-top:7px solid rgb(151,149,150); 
+}
+#bandeau #interiors {
+    font-size: 3rem;;
+}
+#menuprincipal #burger {/* masque le burger en grand */
+display: none;
+}
+
+/* === Slider === */
+.carousel-item img {
+    max-height: 520px;
+    min-width: auto;
+  }
+.carousel-item h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.carousel-item h2 span{
+    font-size: 3rem;
+}
+#slider .sliderTitle {
+    left:0%;
+    right: 0%;
+    bottom: 0%;
+    padding-bottom: 0px;
+    opacity: 0.7;
+}
+/* === Section1 Vignettes === */
+
+.sectionTitle .line {
+    border: 3px solid rgb(228,228,228);
+    background-color: #e4e4e4;
+}
+
+.card-deck .card-body,
+.card-deck .card-header,
+.card-deck .card {
+    border: 3px solid #f0f0f0!important;
+}
+.card-deck .card-body{
+    padding:0.8rem;
+}
+/* === Section 2 === */
+#catalogue .btn-catalogue{
+    margin-top: 8rem;
+}
+#catalogue .titreRef{
+    margin-top: 15rem;
+}
