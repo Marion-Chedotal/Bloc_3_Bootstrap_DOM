@@ -12,16 +12,23 @@ a,a:hover {
     text-decoration:none;   
     color: black
 }
-#bandeau h1 a, #bandeau h1 a:hover{
+#banner h1 a, #banner h1 a:hover{
     text-decoration:none;   
     color: black 
 }
 ul{
     list-style-type: none;
 }
-/* général */
+/* general */
 
-h1 a, #bandeau h2, #slider h2, .sectionTitle h5, .infosInteriors h5 {
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 a, #banner h2, #slider h2, .section-title h5, .info-interiors h5 {
     font-family:'antipasto_pro_regular';
 }
 p, a, li, .card-body h5 {
@@ -29,18 +36,18 @@ p, a, li, .card-body h5 {
 }
 
 /* ==== HEADER === */
-#bandeau .sideTitle {
+#banner .side-title {
     font-size:1.3rem;
 }
-#bandeau {
+#banner {
     border-top:7px solid rgb(151,149,150); 
 }
-#bandeau #interiors {
+#banner #interiors {
     font-size: 3rem;;
 }
-#menuprincipal #burger {/* masque le burger en grand */
+/* #main-menu #burger {/*masque le burger en grand 
 display: none;
-}
+} */
 
 /* === Slider === */
 .carousel-item img {
@@ -54,7 +61,7 @@ display: none;
 .carousel-item h2 span{
     font-size: 3rem;
 }
-#slider .sliderTitle {
+#slider .slider-title {
     left:0%;
     right: 0%;
     bottom: 0%;
@@ -63,23 +70,56 @@ display: none;
 }
 /* === Section1 Vignettes === */
 
-.sectionTitle .line {
+.section-title .line {
     border: 3px solid rgb(228,228,228);
     background-color: #e4e4e4;
 }
 
-.card-deck .card-body,
+#main-menu,.card-deck .card-body, 
 .card-deck .card-header,
-.card-deck .card {
+.card-deck .card, .card {
     border: 3px solid #f0f0f0!important;
 }
 .card-deck .card-body{
     padding:0.8rem;
 }
+
 /* === Section 2 === */
+.news h5{
+    font-size: 1rem;
+}
+.card .btn-more-info, .info-interiors .btn-more-info {
+    font-size: 0.8rem;
+}
+#modal-2 #img-news2  {
+    max-width: 100%;
+}
+#modal-1 #img-news1 {
+    max-width: 60%;
+}
+
+#catalogue #info  {
+    top:0%;
+    left:20%;
+}
+#catalogue #modal-btn {
+    top:62%;
+    left:15%;
+}
 #catalogue .btn-catalogue{
     margin-top: 8rem;
 }
-#catalogue .titreRef{
-    margin-top: 15rem;
+#catalogue .title-ref{
+    margin-top: 2rem;
 }
+
+/* MQ */
+
+ @media (max-width: 768px) {
+    #slider {
+    display: none;
+    max-width: 100%;
+}
+}   
+
+

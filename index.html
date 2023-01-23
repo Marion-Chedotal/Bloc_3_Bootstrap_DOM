@@ -17,199 +17,328 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- lien vers le css  -->
     <link href="style.css" rel="stylesheet">
+    <!--script JS -->
+    <script src="script.js" defer></script>
     <title>Interiors</title>
 </head>
 
 <body class="container">
 
-    <header id="bandeau" role="banner">
-        <div class="d-flex justify-content-center mt-5">
-            <h2 class="sideTitle mt-4 mr-4">Magazine En Ligne</h2>
-            <h1 id="interiors">
-                <a href="index.html">INTERIORS</a>
-            </h1>
-            <h2 class="sideTitle mt-4 ml-4">Nos Meilleurs Idées</h2>
-        </div>
-        <!-- nav' + burger -->
-        <nav role="nav" id="menuprincipal"
-            class="mt-4 navbar navbar-expand justify-content-center bg-light navbar-light">
-            <div id="burger">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+    <header id="banner" role="banner">
+        <div class="container-fluid mt-5 ">
+            <div class="row text-center align-items-center">
+                <div class="col-md-4">
+                    <h2 class="side-title ">Magazine En Ligne</h2>
+                </div>
+                <div class=" col-md-4 pl-1">
+                    <h1 id="interiors">
+                        <a href="index.html">INTERIORS</a>
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="side-title">Nos Meilleurs Idées</h2>
+                </div>
             </div>
-            <ul class="navbar-nav">
-                <li class="nav-item active mr-4"><a href="index.html" class="choix nav-link">O1 Accueil</a></li>
-                <li class="nav-item mr-4"><a href="a_propos.html" class="nav-link">O2 A propos</a></li>
-                <li class="nav-item mr-4"><a href="services.html" class="nav-link">O3 Services</a></li>
-                <li class="nav-item mr-4"><a href="galerie.html" class="nav-link">O4 Galérie</a></li>
-                <li class="nav-item mr-4"><a href="news.html" class="nav-link">O5 Les news</a></li>
-                <li class="nav-item mr-4"><a href="contact.html" class="nav-link">O6 Contact</a></li>
-            </ul>
+        </div>
+
+        <!-- nav -->
+        <nav role="navigation" id="main-menu"
+            class="navbar navbar-expand-md navbar-light bg-light m-4 justify-content-center">
+            <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- liste des liens -->
+            <div class="collapse navbar-collapse justify-content-center " id="menu">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="#">01 Accueil</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O2 A propos</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O3 Service</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O4 Galerie</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O5 Les news</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O6 Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main role="main">
+
         <!-- slider -->
+
         <div id="slider" class="carousel slide" data-ride="carousel">
 
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/chaises.jpg" alt="slider 1 photos chaises">
-                    <div class="carousel-caption sliderTitle bg-secondary">
+                    <img src="images/chaises.jpg" alt="slider 1 photos chaises" class="img-fluid ">
+                    <div class="carousel-caption slider-title bg-secondary">
                         <h2> pour trouver <span>les meilleures</span> solutions...</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/chambre-blanche.jpg" alt="slider 2 photo chambre blanche">
-                    <div class="carousel-caption sliderTitle bg-dark">
+                    <img src="images/chambre-blanche.jpg" alt="slider 2 photo chambre blanche" class="img-fluid">
+                    <div class="carousel-caption slider-title bg-dark">
                         <h2> pour trouver <span>les meilleures</span> solutions...</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/chambre-rose.jpg" alt="slider 3 photo chambre rose">
-                    <div class="carousel-caption sliderTitle bg-dark">
+                    <img src="images/chambre-rose.jpg" alt="slider 3 photo chambre rose" class="img-fluid">
+                    <div class="carousel-caption slider-title bg-dark">
                         <h2> pour trouver <span>les meilleures</span> solutions...</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/cuisine.jpg" alt="slider 4 photo cuisine">
-                    <div class="carousel-caption sliderTitle bg-dark">
+                    <img src="images/cuisine.jpg" alt="slider 4 photo cuisine" class="img-fluid">
+                    <div class="carousel-caption slider-title bg-dark">
                         <h2> pour trouver <span>les meilleures</span> solutions...</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/salon.jpg" alt="slider 5 salon">
-                    <div class="carousel-caption sliderTitle bg-dark">
+                    <img src="images/salon.jpg" alt="slider 5 salon" class="img-fluid ">
+                    <div class="carousel-caption slider-title bg-dark">
                         <h2> pour trouver <span> les meilleures</span> solutions...</h2>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Section articles nouvelle collection -->
-            <section role="region">
-                <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-                    rel="stylesheet" />
-                <div class="d-flex my-2 sectionTitle">
+        <!-- Section articles nouvelle collection -->
+
+        <section role="region">
+
+            <div class="d-sm-flex my-2 section-title">
+                <hr class="my-auto flex-grow-1 line">
+                <h5 class="px-4 text-uppercase text-center mt-3 mb-3 font-weight-bold">nouvelle collection</h5>
+                <hr class="my-auto flex-grow-1 line">
+            </div>
+            <div class="row ">
+                <article class="col-lg-3  col-sm-6 card bg-light rounded-0">
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">chambres</h5>
+                    <div class="card-body">
+                        <img class="card-img-top " src="images/vignette-chambre.jpg" alt="vignette chambre">
+                    </div>
+                </article>
+                <article class="col-lg-3  col-sm-6 card bg-light rounded-0">
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">cuisines</h5>
+                    <div class="card-body">
+                        <img class="card-img-top " src="images/vignette-cuisine.jpg" alt="vignette cuisine">
+                    </div>
+                </article>
+                <article class="col-lg-3 col-sm-6 card bg-light rounded-0">
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">salon</h5>
+                    <div class="card-body">
+                        <img class="card-img-top " src="images/vignette-fauteuil.jpg" alt="vignette salon">
+                    </div>
+                </article>
+                <article class="col-lg-3  col-sm-6 card bg-light rounded-0 ">
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">bains</h5>
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/vignette-sallebain.jpg" alt="vignette salle de bain">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+
+        <section role="region" class="row">
+
+            <article class="col-lg-4 news">
+                <div class="d-sm-flex col-12 section-title">
                     <hr class="my-auto flex-grow-1 line">
-                    <h5 class="px-4 text-uppercase text-center mt-3 mb-3">nouvelle collection</h5>
+                    <h5 class="px-4 text-center mt-4 mb-4">Dernières News</h5>
                     <hr class="my-auto flex-grow-1 line">
                 </div>
-                <div class="card-deck">
-                    <article class="card bg-light rounded-0">
-                        <h5 class="card-header text-uppercase text-center border-bottom bg-light">chambres</h5>
-                        <div class="card-body">
-                            <img class="card-img-top" src="images/vignette-chambre.jpg" alt="vignette chambre">
+                <div class="row d-flex justify-content-between">
+
+        <!-- Partie à modifier via le DOM _ news1 et news2 -->
+                    <div id="news1" class="card rounded-0 bg-light col-sm-6 col-lg-12">
+                        <div class="card-body my-2 mx-2">
+                            <h5 id="title-news1" class="card-title text-uppercase font-weight-bold date">21 octobre 2020</h5>
+                            <p id="content-news1" class="card-text text-secondary text-justify">Découvre notre
+                                collection Lodge et ses différents éléments modulables et créez ainsi votre combinaison.
+                            </p>
+                            <p id="date-author-keyword-news1" class="p2 small justify-content-between font-italic "></p>
+
+                            <!-- Boite modale via JSON -->
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btn btn-outline-secondary text-uppercase float-right btn-more-info text-dark"
+                                data-toggle="modal" data-target="#modal-1">
+                                + d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modal-1"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title font-weight-bold text-center" id="modalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="date"></p>
+                                            <div class="d-flex align-items-center justify-content-center"><img id="img-news1" class="m-4" src="" alt=""></div>
+                                            
+                                            <p class="content1"></p>
+                                            <p class="author"></p>
+                                            <p class="keywords1 font-italic small text-right"></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
-                    </article>
-                    <article class="card bg-light rounded-0">
-                        <h5 class="card-header text-uppercase text-center bg-light">cuisines</h5>
-                        <div class="card-body">
-                            <img class="card-img-top" src="images/vignette-cuisine.jpg" alt="vignette cuisine">
+                    </div>
+                    <div id="news2" class="card rounded-0 bg-light col-sm-6 col-lg-12">
+                        <div class="card-body my-2 mx-2">
+                            <h5 id="title-news2" class="card-title text-uppercase font-weight-bold date">14 novembre
+                                2020</h5>
+                            <p id="content-news2" class="card-text text-secondary text-justify">Venez dès à présent
+                                découvrir dans votre magasin Interior's, l'opération Petis meubles enfants du 14 novembre 
+                                au 31 décembre ! ...</p>
+                            <p id="date-author-keyword-news2" class="p2 small justify-content-between font-italic"></p>
+
+                            <!-- Boite modale via JSON -->
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btn btn-outline-secondary text-uppercase float-right btn-more-info text-dark"
+                                data-toggle="modal" data-target="#modal-2">
+                                + d'infos
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-2"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title font-weight-bold text-center" id="modalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="date"></p>
+                                            <img id="img-news2" src="" alt="">
+                                            <p class="content"></p>
+                                            <p class="author"></p>
+                                            <p class="keywords2 font-italic small text-right"></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </article>
-                    <article class="card bg-light rounded-0">
-                        <h5 class="card-header text-uppercase text-center bg-light">salon</h5>
-                        <div class="card-body">
-                            <img class="card-img-top" src="images/vignette-fauteuil.jpg" alt="vignette salon">
-                        </div>
-                    </article>
-                    <article class="card bg-light rounded-0">
-                        <h5 class="card-header text-uppercase text-center bg-light">bains</h5>
-                        <div class="card-body">
-                            <img class="card-img-top" src="images/vignette-sallebain.jpg" alt="Cvignette salle de bain">
-                        </div>
-                    </article>
+                    </div>
                 </div>
-            </section>
-            <!-- Section 2 dernières news / qui sommes-nous / résa catalogue -->
+            </article>
 
-            <section role="region" class="row">
+            <article class="col-lg-4 col-md-6 col-sm-6 mt-5 info-interiors">
+                <h5 class="mt-4 font-weight-bold">Quelques mots sur notre société</h5>
+                <p class="my-4 text-justify"> Découvrez notre sélection de meubles contemporains et de mobilier
+                    moderne et design pour aménager votre intérieur. Plus de 10,000 objets deco et design en 
+                    vente.</p>
+                <p class="my-4 text-justify"> <small>> Préparer vos cadeaux et vous faire plaisir avec des milliers
+                        de produits disponibles et livrés chez vous en 24/48h !</small></p>
+                <p class="text-justify mb-4"> <small>> Noël 2021 est déjà là! Célébrez un Noël design avec notre
+                        sélection d'idées de cadeaux originales et insolites. Découvrez notre sélection d'objets 
+                        ludiques et insolites et faites le plein d'idées !</small></p>
+                <a href="#" class="btn btn-outline-secondary text-uppercase btn-more-info text-dark">+ d'infos</a>
+            </article>
 
-                <article class="col-md-4 news">
-                    <div class="d-flex col-12 sectionTitle">
-                        <hr class="my-auto flex-grow-1 line">
-                        <h5 class="px-4 text-center mt-4 mb-4">Dernières news</h5>
-                        <hr class="my-auto flex-grow-1 line">
+            <article id="catalogue" class="col-lg-4 col-md-6 col-sm-6 mt-5">
+                <div class="position-relative mt-3">
+                    <img src="images/fond-book.png" alt="img catalogue" class="img-fluide mx-auto d-block ">
+                    <div id="info" class="position-absolute text-left">
+                        <p class="text-uppercase w-25 mt-3"> Réservez notre catalogue</p>
                     </div>
-                    <div class="card bg-light ">
-                        <div class="card rounded-0 bg-light">
-                            <div class="card-body my-2 mx-2">
-                                <h5 class="card-title text-uppercase font-weight-bold date">21 octobre 2020</h5>
-                                <p class="card-text text-secondary">Découvrez notre collection Lodge et ses différents
-                                    éléments modulables
-                                    et créez ainsi votre combinaison! ...</p>
-                                <a href="#" class="btn btn-outline-secondary text-uppercase float-right">+ d'infos</a>
+                    <div class="container mt-3">
+                        <!-- Button to Open the Modal -->
+                        <button id="modal-btn" type="button" class="btn text-white w-25 position-absolute"
+                            data-toggle="modal" data-target="#modal-3">
+                            Cliquer<br> ICI
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="modal-3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Réserver son catalogue</h4>
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form role="form" class="ml-4">
+                                            <div class="form-group">
+                                                <label>
+                                                    Adresse E-mail
+                                                </label>
+                                                <input type="email" class="form-control" placeholder="Votre Email" />
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" /> J'accepte de recevoir le catalogue
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">
+                                                OK
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card rounded-0 bg-light">
-                            <div class="card-body my-2 mx-2">
-                                <h5 class="card-title text-uppercase font-weight-bold date">14 novembre 2020</h5>
-                                <p class="card-text text-secondary">Venez dès à présent découvrir dans votre magasin
-                                    Interior's,
-                                    l'opération Petis meubles enfants du 14 novembre au 31 décembre ! ...</p>
-                                <a href="#" class="btn btn-outline-secondary text-uppercase float-right">+ d'infos</a>
-                            </div>
-                        </div>
                     </div>
-                </article>
-                <article class="col-md-4 mt-5 infosInteriors">
-                    <h5 class="mt-4 font-weight-bold">Quelques mots sur notre société</h5>
-                    <p class="my-4 text-justify"> Découvrez notre sélection de meubles contemporains et de mobilier
-                        moderne et design pour
-                        aménager votre intérieur. Plus de 10,000 objets deco et design en vente.</p>
-                    <p class="my-4 text-justify"> <small>> Préparer vos cadeaux et vous faire plaisir avec des milliers
-                            de produits disponibles et livrés
-                            chez vous en 24/48h !</small></p>
-                    <p class="text-justify"> <small>> Noël 2021 est déjà là! Célébrez un Noël design avec notre
-                            sélection d'idées de cadeaux
-                            originales et insolites. Découvrez notre sélection d'objets ludiques et insolites et faites
-                            le
-                            plein d'idées !</small>
-                    </p>
-                    <a href="#" class="btn btn-outline-secondary text-uppercase">+ d'infos</a>
-                </article>
-                <article id="catalogue" class="col-md-4 mt-4">
-                    <div class="position-relative">
-                        <img src="images/fond-book.png" class="img-fluide float-right">
-                        <div class="position-absolute text-left" style="top: 35%; left: 30%;">
-                            <p class="text-uppercase w-25 mt-3"> Réservez notre catalogue</p>
-                        </div>
-                        <a href="#" class="btn w-25 position-absolute btn-catalogue text-white" style="left:24%">Cliquer
-                            ICI</a>
-                    </div>
-                    <div class="ml-4 infosInteriors">
-                        <h5 class="font-weight-bold mb-4 ml-5 titreRef">Références</h5>
-                        <ul class="ml-2">
-                            <li class="list-item mb-2">Expositions</li>
-                            <li class="list-item mb-2">Hôtels</li>
-                            <li class="list-item mb-2">Restaurants et Bars</li>
-                            <li class="list-item mb-2">Revente</li>
-                            <li class="list-item mb-2">Salons et Spas</li>
-                        </ul>
-                    </div>
-                </article>
-        </div>
-        </div>
+                </div>
+                <div class="ml-2 info-interiors">
+                    <h5 class="font-weight-bold mb-4 ml-5 title-ref">Références</h5>
+                    <ul class="ml-2">
+                        <li class="list-item mb-2">Expositions</li>
+                        <li class="list-item mb-2">Hôtels</li>
+                        <li class="list-item mb-2">Restaurants et Bars</li>
+                        <li class="list-item mb-2">Revente</li>
+                        <li class="list-item mb-2">Salons et Spas</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
     <footer role="contentinfo" class="container">
         <div class="reseaux row border-top mt-4">
-            <div class="col-md-6">
+            <div class="col-6">
                 <ul class="icons pl-0 d-flex justify-content-start mt-4">
                     <li><a href="#"><i class="fab fa-twitter text-primary fa-lg mr-2"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook-f text-primary fa-lg mr-2"></i></a></li>
                     <li><a href="#"><i class="fab fa-pinterest text-primary fa-lg mr-2"></i></a></li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <p class="copyright pl-0 d-flex justify-content-end mt-4">&copy; GBS - INTERIORS 2023</p>
+            <div class="col-6">
+                <p class="copyright pl-0 d-flex justify-content-end mt-4 "><small>&copy;GBS - INTERIORS
+                        2023</small></p>
             </div>
         </div>
-
-
     </footer>
-
 </body>
 
 </html>
