@@ -26,7 +26,7 @@
 
     <header id="banner" role="banner">
         <div class="container-fluid mt-5 ">
-            <div class="row text-center align-items-center">
+            <div class="row no-gutters text-center align-items-center">
                 <div class="col-md-4">
                     <h2 class="side-title ">Magazine En Ligne</h2>
                 </div>
@@ -43,7 +43,7 @@
 
         <!-- nav -->
         <nav role="navigation" id="main-menu"
-            class="navbar navbar-expand-md navbar-light bg-light m-4 justify-content-center">
+            class="navbar navbar-expand-md navbar-light bg-light my-4 justify-content-center">
             <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
                 aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,14 +51,14 @@
             <!-- liste des liens -->
             <div class="collapse navbar-collapse justify-content-center " id="menu">
                 <ul class="navbar-nav justify-content-center">
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="#">01 Accueil</a></li>
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O2 A propos</a>
+                    <li class="nav-item d-flex justify-content-center active"><a class="nav-link" href="#">01 Accueil</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">02 A propos</a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O3 Service</a></li>
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O4 Galerie</a></li>
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O5 Les news</a>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">03 Service</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">04 Galerie</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">05 Les news</a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">O6 Contact</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link " href="#">06 Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -114,27 +114,27 @@
                 <h5 class="px-4 text-uppercase text-center mt-3 mb-3 font-weight-bold">nouvelle collection</h5>
                 <hr class="my-auto flex-grow-1 line">
             </div>
-            <div class="row ">
+            <div class="row no-gutters">
                 <article class="col-lg-3  col-sm-6 card bg-light rounded-0">
-                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">chambres</h5>
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light"><a href="#">chambres</a></h5>
                     <div class="card-body">
                         <img class="card-img-top " src="images/vignette-chambre.jpg" alt="vignette chambre">
                     </div>
                 </article>
                 <article class="col-lg-3  col-sm-6 card bg-light rounded-0">
-                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">cuisines</h5>
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light"><a href="#">cuisines</a></h5>
                     <div class="card-body">
                         <img class="card-img-top " src="images/vignette-cuisine.jpg" alt="vignette cuisine">
                     </div>
                 </article>
                 <article class="col-lg-3 col-sm-6 card bg-light rounded-0">
-                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">salon</h5>
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light"><a href="#">salon</a></h5>
                     <div class="card-body">
                         <img class="card-img-top " src="images/vignette-fauteuil.jpg" alt="vignette salon">
                     </div>
                 </article>
                 <article class="col-lg-3  col-sm-6 card bg-light rounded-0 ">
-                    <h5 class="card-header text-uppercase text-center border-bottom bg-light">bains</h5>
+                    <h5 class="card-header text-uppercase text-center border-bottom bg-light"><a href="#">bains</a></h5>
                     <div class="card-body">
                         <img class="card-img-top" src="images/vignette-sallebain.jpg" alt="vignette salle de bain">
                     </div>
@@ -144,7 +144,7 @@
 
         <!-- Section 2 -->
 
-        <section role="region" class="row">
+        <section role="region" class="row no-gutters">
 
             <article class="col-lg-4 news">
                 <div class="d-sm-flex col-12 section-title">
@@ -152,7 +152,7 @@
                     <h5 class="px-4 text-center mt-4 mb-4">Dernières News</h5>
                     <hr class="my-auto flex-grow-1 line">
                 </div>
-                <div class="row d-flex justify-content-between">
+                <div class="row no-gutters d-flex justify-content-between">
 
         <!-- Partie à modifier via le DOM _ news1 et news2 -->
                     <div id="news1" class="card rounded-0 bg-light col-sm-6 col-lg-12">
@@ -248,8 +248,8 @@
                 </div>
             </article>
 
-            <article class="col-lg-4 col-md-6 col-sm-6 mt-5 info-interiors">
-                <h5 class="mt-4 font-weight-bold">Quelques mots sur notre société</h5>
+            <article class="pl-5 col-lg-4 col-md-6 col-sm-6 mt-5 info-interiors">
+                <h5 class="mt-4 font-weight-bold text-center">Quelques mots sur notre société</h5>
                 <p class="my-4 text-justify"> Découvrez notre sélection de meubles contemporains et de mobilier
                     moderne et design pour aménager votre intérieur. Plus de 10,000 objets deco et design en 
                     vente.</p>
@@ -261,10 +261,10 @@
                 <a href="#" class="btn btn-outline-secondary text-uppercase btn-more-info text-dark">+ d'infos</a>
             </article>
 
-            <article id="catalogue" class="col-lg-4 col-md-6 col-sm-6 mt-5">
+            <article id="catalogue" class="pl-5 col-lg-4 col-md-6 col-sm-6 mt-5">
                 <div class="position-relative mt-3">
                     <img src="images/fond-book.png" alt="img catalogue" class="img-fluide mx-auto d-block ">
-                    <div id="info" class="position-absolute text-left">
+                    <div id="info" class="position-absolute text-lefts">
                         <p class="text-uppercase w-25 mt-3"> Réservez notre catalogue</p>
                     </div>
                     <div class="container mt-3">
@@ -311,14 +311,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 info-interiors">
-                    <h5 class="font-weight-bold mb-4 ml-5 title-ref">Références</h5>
-                    <ul class="ml-2">
-                        <li class="list-item mb-2">Expositions</li>
-                        <li class="list-item mb-2">Hôtels</li>
-                        <li class="list-item mb-2">Restaurants et Bars</li>
-                        <li class="list-item mb-2">Revente</li>
-                        <li class="list-item mb-2">Salons et Spas</li>
+                <div class=" info-interiors">
+                    <h5 class="font-weight-bold mb-4 ml-4 title-ref">Références</h5>
+                    <ul>
+                        <li class="list-item mb-2"><a href="#">Expositions</a></li>
+                        <li class="list-item mb-2"><a href="#">Hôtels</a></li>
+                        <li class="list-item mb-2"><a href="#">Restaurants et Bars</a></li>
+                        <li class="list-item mb-2"><a href="#">Revente</a></li>
+                        <li class="list-item mb-2"><a href="#">Salons et Spas</a></li>
                     </ul>
                 </div>
             </article>

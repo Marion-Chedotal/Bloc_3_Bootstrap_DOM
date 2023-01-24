@@ -6,7 +6,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 /* mini-reset*/
 a,a:hover {
     text-decoration:none;   
@@ -20,7 +19,6 @@ ul{
     list-style-type: none;
 }
 /* general */
-
 .container{
     width: 100%;
     padding-left: 15px;
@@ -31,10 +29,9 @@ ul{
 h1 a, #banner h2, #slider h2, .section-title h5, .info-interiors h5 {
     font-family:'antipasto_pro_regular';
 }
-p, a, li, .card-body h5 {
+body {
     font-family:'Segoe UI';
 }
-
 /* ==== HEADER === */
 #banner .side-title {
     font-size:1.3rem;
@@ -45,10 +42,6 @@ p, a, li, .card-body h5 {
 #banner #interiors {
     font-size: 3rem;;
 }
-/* #main-menu #burger {/*masque le burger en grand 
-display: none;
-} */
-
 /* === Slider === */
 .carousel-item img {
     max-height: 520px;
@@ -69,12 +62,10 @@ display: none;
     opacity: 0.7;
 }
 /* === Section1 Vignettes === */
-
 .section-title .line {
     border: 3px solid rgb(228,228,228);
     background-color: #e4e4e4;
 }
-
 #main-menu,.card-deck .card-body, 
 .card-deck .card-header,
 .card-deck .card, .card {
@@ -83,7 +74,6 @@ display: none;
 .card-deck .card-body{
     padding:0.8rem;
 }
-
 /* === Section 2 === */
 .news h5{
     font-size: 1rem;
@@ -97,14 +87,13 @@ display: none;
 #modal-1 #img-news1 {
     max-width: 60%;
 }
-
 #catalogue #info  {
     top:0%;
-    left:20%;
+    left:22%;
 }
 #catalogue #modal-btn {
     top:62%;
-    left:15%;
+    left: 16%;
 }
 #catalogue .btn-catalogue{
     margin-top: 8rem;
@@ -112,13 +101,19 @@ display: none;
 #catalogue .title-ref{
     margin-top: 2rem;
 }
-
 /* MQ */
-
  @media (max-width: 768px) {
     #slider {
     display: none;
     max-width: 100%;
+}
+#catalogue #modal-btn {
+    top:62%;
+    left: 14%;
+}
+#catalogue #info  {
+    top:0;
+    left:18%;
 }
 }   
 
