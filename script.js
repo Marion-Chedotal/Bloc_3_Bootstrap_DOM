@@ -1,106 +1,60 @@
-// pour visualiser dans la console les chemins d'accès aux données
-// fetch('https://www.tbads.eu/greta/kercode/ajax/?article=2')
-//     .then(response => response.json())
-//     .then(response2 => console.log(response2))
-
 
 let articleIndex = 1;
+let url = 'https://www.tbads.eu/greta/kercode/ajax/?article=1';
 $(document).ready(function () {
+    function article() {
 
-    /* Partie NEWS 1
-     * JSON pour récupérer les données et les intégrer à l'emplacement "dernières news"*/
-    let titleNews1 = document.querySelector(`#news${articleIndex} h5`);
-    let contentNews1 = document.querySelector('#news1 p');
-    let keywordsNews1 = document.querySelector('#news1 .p2');
+        /* Partie NEWS 1
+         * Récupération des données via le DOM et intégration à l'emplacement "dernières news"*/
+        let titleNews = document.querySelector(`#news${articleIndex} h5`);
+        let contentNews = document.querySelector(`#news${articleIndex} p`);
+        let keywordsNews = document.querySelector(`#news${articleIndex} .p2`);
 
-    //Données à intégrer dans la boite modale
-    let modalTitle1 = document.querySelector('#modal-1 h5');
-    let modalDate1 = document.querySelector('#modal-1 p.date');
-    let modalAuthor1 = document.querySelector('#modal-1 .author');
-    let modalKeywords1 = document.querySelector('.keywords1')
-    let modalContent1 = document.querySelector('#modal-1 .content1');
-    let modalImg1 = document.querySelector('#img-news1');
+        //Données à intégrer dans la boite modale
+        let modalTitle = document.querySelector(`#modal-${articleIndex} h5`);
+        let modalDate = document.querySelector(`#modal-${articleIndex} p.date`);
+        let modalAuthor = document.querySelector(`#modal-${articleIndex} .author`);
+        let modalKeywords = document.querySelector(`.keywords${articleIndex}`)
+        let modalContent = document.querySelector(`#modal-${articleIndex} .content`);
+        let modalImg = document.querySelector(`#img-news${articleIndex}`);
 
-    fetch('https://www.tbads.eu/greta/kercode/ajax/?article=1')
-        .then(response => response.json())
-        .then(json => {
+        fetch(url)
+            .then(response => response.json())
+            .then(json => {
 
-            let title1 = json.title;
-            modalTitle1.innerHTML = title1;
+                let title = json.title;
+                modalTitle.innerHTML = title;
 
-            let date1 = json.date.day + " " + json.date.month + " " + json.date.year;
-            titleNews1.innerHTML = date1;
-            modalDate1.innerHTML = date1;
+                let date = json.date.day + " " + json.date.month + " " + json.date.year;
+                titleNews.innerHTML = date;
+                modalDate.innerHTML = date;
 
-            modalImg1.src = json.picture;
+                modalImg.src = json.picture;
 
-            let content1 = json.content[0].substring(0, 150);
-            contentNews1.innerHTML = content1 + "...";
-            for (let content1 of json.content) {
-                let p = document.createElement('p');
-                p.innerHTML = content1;
-                modalContent1.appendChild(p);
-            }
+                let content = json.content[0].substring(0, 150);
+                contentNews.innerHTML = content + "...";
+                for (let content of json.content) {
+                    let p = document.createElement('p');
+                    p.innerHTML = content;
+                    modalContent.appendChild(p);
+                }
 
-            let authorName1 = json.author.name;
-            let authorSurname1 = json.author.surname;
-            modalAuthor1.innerHTML = authorSurname1 + " " + authorName1;
+                let authorName = json.author.name;
+                let authorSurname = json.author.surname;
+                modalAuthor.innerHTML = authorSurname + " " + authorName;
 
-            let keywords1 = json.keyword[0] + " / " + json.keyword[1] + " / " + json.keyword[2];
-            keywordsNews1.innerHTML = keywords1;
-            modalKeywords1.innerHTML = keywords1;
-
-
-
-        })
-        .catch(error => alert("Erreur : " + error));
-
-
-    /* Partie NEWS 2
-     * JSON pour récupérer les données et les intégrer à l'emplacement "dernières news"*/
-    let titleNews2 = document.querySelector('#news2 h5');
-    let contentNews2 = document.querySelector('#news2 p');
-    let keywordsNews2 = document.querySelector('#news2 .p2');
-
-    //Données à intégrer dans la boite modale
-    let modalTitle2 = document.querySelector('#modal-2 h5');
-    let modalDate2 = document.querySelector('#modal-2 p.date');
-    let modalAuthor2 = document.querySelector('#modal-2 .author');
-    let modalKeywords2 = document.querySelector('.keywords2')
-    let modalContent2 = document.querySelector('#modal-2 .content');
-    let modalImg2 = document.querySelector('#img-news2');
-
-
-    fetch('https://www.tbads.eu/greta/kercode/ajax/?article=2')
-        .then(response => response.json())
-        .then(json => {
-
-            let title2 = json.title;
-            modalTitle2.innerHTML = title2;
-
-            let date2 = json.date.day + " " + json.date.month + " " + json.date.year;
-            titleNews2.innerHTML = date2;
-            modalDate2.innerHTML = date2;
-
-            let content2 = json.content[0].substring(0, 150);
-            contentNews2.innerHTML = content2 + "...";
-
-            let authorName2 = json.author.name;
-            let authorSurname2 = json.author.surname;
-            modalAuthor2.innerHTML = authorSurname2 + " " + authorName2;
-
-            let keywords2 = json.keyword[0] + " / " + json.keyword[1] + " / " + json.keyword[2];
-            keywordsNews2.innerHTML = keywords2;
-            modalKeywords2.innerHTML = keywords2;
-
-            modalImg2.src = json.picture;
-
-            for (let content of json.content) {
-                let p = document.createElement('p');
-                p.innerHTML = content;
-                modalContent2.appendChild(p);
-            }
-        })
-
-        .catch(error => alert("Erreur : " + error));
+                let keywords = json.keyword[0] + " / " + json.keyword[1] + " / " + json.keyword[2];
+                keywordsNews.innerHTML = keywords;
+                modalKeywords.innerHTML = keywords;
+            })
+            .catch(error => alert("Erreur : " + error));
+    }
+    article();
+    // Nouvelle fonction qui permet de charger le 2nd article
+    function newArticle() {
+        articleIndex = 2;
+        url = 'https://www.tbads.eu/greta/kercode/ajax/?article=2';
+        article();
+    }
+    newArticle();
 });
