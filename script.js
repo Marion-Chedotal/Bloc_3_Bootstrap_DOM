@@ -29,6 +29,8 @@ $(document).ready(function () {
                 titleNews.innerHTML = date;
                 modalDate.innerHTML = date;
 
+                // ajout de l'attribut src à la balise img
+                modalImg.setAttribute("src","");
                 modalImg.src = json.picture;
 
                 let content = json.content[0].substring(0, 150);
